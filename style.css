@@ -1,0 +1,453 @@
+html{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: black;
+}
+.h{
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: gold;
+    width: 100%;
+    height: 100px;
+    display:block;
+}
+.logo{
+    height: 80px;
+}
+span{
+    font-size: 3rem;
+}
+span b{
+    font-size: 60%;
+}
+.menu{
+    font-size: 2rem;
+    margin: 0;
+    background-color: gold;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:gray;
+    opacity: 0.6;
+}
+.submenu{
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color:steelblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+.submenu a{
+    text-decoration: none;
+    color:white;
+}
+.submenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+.jsubmenu{
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color:steelblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.jsubmenu a{
+    text-decoration: none;
+    color: white;
+}
+.jsubmenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+.description{
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+.description-c{
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+.bot{
+    background-color: gold;
+    display: block;
+    width: 100%;
+}
+.schdl{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: black;
+    background-color: white;
+}
+.arrows{
+    margin: 0 auto;
+    font-size: 3rem;
+    display: block;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.arrows:hover{
+    background-color:steelblue;
+}
+.words{
+    color: grey;
+    opacity: 0.8;
+}
+.links{
+    text-align: center;
+    color: gray;
+}
+.links:hover .arrows{
+    background-color: steelblue;
+}
+.links:hover .words{
+    color: steelblue;
+}
+<!--iphoneX-->
+#sec0{
+    display: none;
+}
+.sec0-container{
+    display: none;
+}
+.iphonex-menu{
+    display: none;
+}
+.description2{
+    display: none;
+}
+.btn{
+    display: none;
+}
+@media only screen and (max-width:375px){
+    html{
+        background-color: white;
+        box-sizing: border-box;
+       scroll-behavior: smooth;
+    }
+    #sec0{
+        justify-items: center;
+        width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        display: block;
+    }
+    .sec0-container{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+    }
+    .centered{
+        color:gold;
+        font-style: italic;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8;
+    }
+    #sec0 img{
+        height: 203px;
+        width: 375px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .x-outdoor{
+        position: relative;
+        height: 203px;
+        width: 375px;
+        color: white;
+    }
+    .x-indoor{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .x-team{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .x-schedule{
+       position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .h{
+       display: none !important;
+    }
+    .description{
+        display: none !important;
+    }
+    .description2{
+        padding: 30px;
+        display:block;
+        background-color: white;
+    }
+    .btn{
+        opacity: 0.5;
+        float: right;
+        background-color: grey;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 50%;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+    }
+}html{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: black;
+}
+.h{
+    margin: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: gold;
+    width: 100%;
+    height: 100px;
+    display:block;
+}
+.logo{
+    height: 80px;
+}
+span{
+    font-size: 3rem;
+}
+span b{
+    font-size: 60%;
+}
+.menu{
+    font-size: 2rem;
+    margin: 0;
+    background-color: gold;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color:gray;
+    opacity: 0.6;
+}
+.submenu{
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color:steelblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+.submenu a{
+    text-decoration: none;
+    color:white;
+}
+.submenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+.jsubmenu{
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color:steelblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.jsubmenu a{
+    text-decoration: none;
+    color: white;
+}
+.jsubmenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+.description{
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+.description-c{
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+.bot{
+    background-color: gold;
+    display: block;
+    width: 100%;
+}
+.schdl{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: black;
+    background-color: white;
+}
+.arrows{
+    margin: 0 auto;
+    font-size: 3rem;
+    display: block;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.arrows:hover{
+    background-color:steelblue;
+}
+.words{
+    color: grey;
+    opacity: 0.8;
+}
+.links{
+    text-align: center;
+    color: gray;
+}
+.links:hover .arrows{
+    background-color: steelblue;
+}
+.links:hover .words{
+    color: steelblue;
+}
+<!--iphoneX-->
+#sec0{
+    display: none;
+}
+.sec0-container{
+    display: none;
+}
+.iphonex-menu{
+    display: none;
+}
+.description2{
+    display: none;
+}
+.btn{
+    display: none;
+}
+@media only screen and (max-width:375px){
+    html{
+        background-color: white;
+        box-sizing: border-box;
+       scroll-behavior: smooth;
+    }
+    #sec0{
+        justify-items: center;
+        width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        display: block;
+    }
+    .sec0-container{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+    }
+    .centered{
+        color:gold;
+        font-style: italic;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8;
+    }
+    #sec0 img{
+        height: 203px;
+        width: 375px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .x-outdoor{
+        position: relative;
+        height: 203px;
+        width: 375px;
+        color: white;
+    }
+    .x-indoor{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .x-team{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .x-schedule{
+       position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .h{
+       display: none !important;
+    }
+    .description{
+        display: none !important;
+    }
+    .description2{
+        padding: 30px;
+        display:block;
+        background-color: white;
+    }
+    .btn{
+        opacity: 0.5;
+        float: right;
+        background-color: grey;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 50%;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+    }
+}
