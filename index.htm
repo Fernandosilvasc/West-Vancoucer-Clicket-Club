@@ -4,10 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEST-VANCOUVER-CLICKET-CLUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menu-hamburguer.css">
+    <link rel="stylesheet" href="./css/slide-image.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    
-    <!--  ## TEST ## -->
-
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <img src="/West-Vancoucer-Clicket-Club/images/new-logo-1.png" alt="" class="logo">
+                </div><!--## LOGO ##-->
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler" />
+                    <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="box-menu">
+                <div>
+                    <div>
+                        <ul class="menu">
+                            <li><a href="#">HOME</a></li>
+                            <li><!-- ABOUT -->
+                                <a href="#">ABOUT</a>
+                                <ul>
+                                    <li><a href="#">ABOUT WVCC</a></li>
+                                    <li><a href="#">CLUB MANAGEMENT</a></li>
+                                    <li><a href="#">LIFE MEMBERS</a></li>
+                                    <li><a href="#">PROGRAMS</a></li>
+                                    <li><a href="#">FACILITIES</a></li>
+                                </ul>
+                            </li>
+                            <li><!-- CATEGORY -->
+                                <a href="#">CATEGORY</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">LEAGUE</a>
+                                        <ul>
+                                            <li><a href="#">TEAMS</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                            <li><a href="#">INDOOR TRAINING</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">JUNIOR</a>
+                                        <ul>
+                                            <li><a href="#">PROGRAMS</a></li>
+                                            <li><a href="#">SCHOOL CRICKET</a></li>
+                                            <li><a href="#">SUMMER CAMP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">WOMEN'S</a>
+                                        <ul>
+                                            <li><a href="#">TEAM</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">OVER 40'S</a>
+                                        <ul>
+                                            <li><a href="#">TEAM</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><!-- CLUBHOUSE -->
+                                <a href="#">CLUBHOUSE</a>
+                                <ul>
+                                    <li><a href="#">RENTAL</a></li>
+                                </ul>
+                            </li>
+                            <li><!-- CONTACT US -->
+                                <a href="#">CONTACT US</a>
+                                <ul>
+                                    <li><a href="#">LOCATION AND DIRECTIONS</a></li>
+                                    <li><a href="#">NEWSLETTER SIGNUP</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div><!-- ## END MENU ## -->
+                </div><!-- ## MENU-WRAP ## -->
+            </div><!--## NAV BAR ## -->
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                            <div class="slide-content">
+                                <h2>Slide 1</h2>
+                                <p>Content for Slide 1</p>
+                            </div>
+                            </div><!-- ## slide-1 ## -->
+                            <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Slide 2</h2>
+                                <p>Content for Slide 2</p>
+                            </div>
+                            </div><!-- ## slide-2 ## -->
+                            <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Slide 3</h2>
+                                <p>Content for Slide 3</p>
+                            </div>
+                            </div><!-- ## slide-3 ## -->
+                            <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Slide 4</h2>
+                                <p>Content for Slide 4</p>
+                            </div>
+                            </div><!-- ## slide-4 ## -->
+                      </div>
+                   </div>
+                </div>
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div><!-- ## controls ## -->
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div><!-- ## bullets ## -->
+            </div><!-- ## SLIDER IMAGE ##-->
+        </nav><!-- ## NAV ## -->
+        <section class="about_container">
+            <div class="grid_about">
+                <div class="content_about">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="img_about">
+                    <img src="/West-Vancoucer-Clicket-Club/images/Cricket Childrens.jpg" alt="" class="about_img">
+                </div>
+                <div class="about_cell"></div>
+            </div>
+        </section><!-- ## ABOUT US ## -->
+        <section class="news-events_container">
+            <h1>News & Events</h1>
+            <hr>
+                <div class="grid_news-events">
+                    <div class="news-events_cell"></div>
+                    <div class="news-events_content item1">
+                        <img src="/West-Vancoucer-Clicket-Club/images/Cricket ball.jpg" alt="">
+                    </div>
+                    <div class="news-events_content item2">
+                        <img src="/West-Vancoucer-Clicket-Club/images/club1.jpg" alt="">
+                        <h5>27 February, 2020</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
+                    </div>
+                    <div class="news-events_content item3">
+                        <img src="/West-Vancoucer-Clicket-Club/images/Cricket Junior Tem.jpg" alt="">
+                        <h5>15 March, 2020</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
+                    </div>
+                    <div class="news-events_content item4">
+                        <img src="/West-Vancoucer-Clicket-Club/images/women's team.jpg" alt="">
+                        <h5>19 April, 2020</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
+                    </div>
+                </div>
+        </section><!-- ## NEWS & EVENTS ## -->
+    </header>
 </body>
 </html>

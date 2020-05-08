@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body ul, body li, body a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 0;
+}
+
+nav {
+  height: 860px;
+}
+
+nav .nav_bar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1001;
+}
+
+nav .box-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+nav .logo img {
+  width: 80px;
+  padding-left: 50px;
+}
+
+.about_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.about_container .grid_about {
+  width: 80%;
+  height: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  grid-row: repeat(10, 1fr);
+}
+
+.about_container .grid_about .content_about {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+  background-color: whitesmoke;
+}
+
+.about_container .grid_about .img_about {
+  width: 90%;
+  height: 85%;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-column: 5/10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2/10;
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 0 5px 5px 0;
+}
+
+.about_container .grid_about .img_about > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.about_container .grid_about .about_cell {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 5;
+  grid-column: 6/11;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+  background-color: #ffcc00;
+}
+
+.about_container .grid_about .content_about {
+  padding: 150px 0 0 200px;
+}
+
+.about_container .grid_about .content_about h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.about_container .grid_about .content_about p {
+  width: 50%;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #111111;
+}
+
+.news-events_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: whitesmoke;
+}
+
+.news-events_container h1 {
+  font-size: 30px;
+  font-style: bold;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+.news-events_container hr {
+  width: 70%;
+  height: 5px;
+  border: none;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.news-events_container .grid_news-events {
+  width: 80%;
+  height: 700px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.news-events_container .grid_news-events .news-events_cell {
+  min-height: 250px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 7;
+  grid-row: 2/9;
+  background-color: #ffcc00;
+  border-radius: 20px;
+}
+
+.news-events_container .grid_news-events .item1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+  background-color: tomato;
+  border: 5px solid white;
+  z-index: 1000;
+}
+
+.news-events_container .grid_news-events .item1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.news-events_container .grid_news-events .item2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+}
+
+.news-events_container .grid_news-events .item3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+}
+
+.news-events_container .grid_news-events .item4 {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 2;
+  grid-column: 8/10;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 9;
+  grid-row: 1/10;
+}
+
+.news-events_container .grid_news-events .item2, .news-events_container .grid_news-events .item3, .news-events_container .grid_news-events .item4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1001;
+}
+
+.news-events_container .grid_news-events .item2 img, .news-events_container .grid_news-events .item3 img, .news-events_container .grid_news-events .item4 img {
+  width: 100%;
+  height: 50%;
+  border: 5px solid white;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.news-events_container .grid_news-events .item2 h5, .news-events_container .grid_news-events .item3 h5, .news-events_container .grid_news-events .item4 h5 {
+  font-size: 22px;
+  padding: 40px 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.news-events_container .grid_news-events .item2 p, .news-events_container .grid_news-events .item3 p, .news-events_container .grid_news-events .item4 p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 10px;
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */
