@@ -23,6 +23,8 @@
 .menu a {
   float: left;
   padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .menu li:hover > a {
