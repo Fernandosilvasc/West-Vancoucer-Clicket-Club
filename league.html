@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!--
+<script type="text/javascript">
+    var num=2;
+    function gallery()
+    { num++;
+      var i = "<img src='image/glry/l "+num+".png' width='300px' height='400px'/>";
+      document.getElementById("picGlry").innerHTML = i;
+     
+      if(num==2)
+      {
+          num=0 ;
+      }	
+     }
+    
+    function startInterval()
+    {
+      var i = "<img src='image/glry/l "+num+".png' width='300px' height='400px'/>";
+      document.getElementById("picGlry").innerHTML = i;
+    
+        setInterval("gallery();",2000);
+    }
+</script>
+-->
+
+
+
+</head>
+
+
+
+
+<body onload="startInterval()">
+
+    
+
+    <div class="h">
+        <div><img src="./image/WVCC Logo.jpg" alt="logo" class="logo">
+        <span>West Vancouver Cricket Club <b>EST 1995</b></span></div>
+    
+        <div class="menu">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CRICKET</a>
+        <a href="">CONTACT</a>
+        </div>
+
+    <div class="submenu">
+        <a href="#sec1">OUTDOOR</a>
+        <a href="#sec2">INDOOR</a>
+        <a href="#sec3">TEAMS</a>
+        <a href="#sec4">SCHEDULE</a>
+    </div>
+    </div>
+    
+    <!--<div id="picGlry"></div> -->
+
+    <!-- for iphoneX-->
+<section id="sec0">
+    
+    <div class="sec0-container">
+        <div class="x-outdoor"><a href="#sec1"><img src="./image/iphone1.jpg" alt="outdoor"><div class="centered">OUTDOOR</div></a></div>
+        <div class="x-indoor"><a href="#sec2"><img src="./image/iphone2.jpg" alt="indoor"><div class="centered">INDOOR</div></a></div>
+        <div  class="x-team"><a href="#sec3"><img src="./image/iphone3.jpg" alt="team"><div class="centered">TEAM</div> </a></div>
+        <div class="x-schedule"><a href="#sec4"><img src="./image/iphone4.jpg" alt="schedule"><div class="centered">SCHEDULE</div></a></div>
+        </div>
+</section>
+<a href="#sec0"><div class="btn">T<br>o<br>p</div></a>
+
+    <section id="sec1">
+        
+    
+        <div class="description">
+            <h1>OUTDOOR TRAINING - starts in early April at Hugo Ray Park (weather dependent)</h1>
+                <p>With the regular season starting on the last weekend of April, outdoor training commences once the weather permits.  This is usually the first week of April.  Please check this page in the spring for the training program. We have 2 permanent nets and one portable net for centre wicket practice.</p>
+            <div class="schdl">
+                <div>
+                <p>Club practices are held as follows:</p>
+                </div>
+                <div>
+                <br>
+                <p><em>Monday - wowen's training (6 - 8 pm)</em></p>
+                <p style="color: darksalmon;"><em>Tuesday - club practice (5:30 - 8 pm)</em></p>
+                <p><em>Thursday - optional club practice (needs to be coordinated with the junior cricket coordinator)</em></p>
+                <p><em>Thursdays - junior program (6 - 8 pm)</em></p>
+                <p>The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The regular season is 19 weeks in duration with 18 matches - all limited overs games.  That means that each team will have one bye during the regular season.  The playoffs start on the first weekend in September</p>
+                </div>
+            </div>
+        
+            <br>
+            <br>
+            <div class="links">
+                <a href="#sec2"><p class="words">Indoor Training</p><p class="arrows">&darr;</p></a>
+            </div>
+        </div>
+
+        <div class="description2">
+            <h1>OUTDOOR TRAINING - starts in early April at Hugo Ray Park (weather dependent)</h1>
+                <p>With the regular season starting on the last weekend of April, outdoor training commences once the weather permits.  This is usually the first week of April.  Please check this page in the spring for the training program. We have 2 permanent nets and one portable net for centre wicket practice.</p>
+                <p>Club practices are held as follows:</p>
+                <br>
+                <p><em>Monday - wowen's training (6 - 8 pm)</em></p>
+                <p style="color: darksalmon;"><em>Tuesday - club practice (5:30 - 8 pm)</em></p>
+                <p><em>Thursday - optional club practice (needs to be coordinated with the junior cricket coordinator)</em></p>
+                <p><em>Thursdays - junior program (6 - 8 pm)</em></p>
+                <br>
+                <p>The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The regular season is 19 weeks in duration with 18 matches - all limited overs games.  That means that each team will have one bye during the regular season.  The playoffs start on the first weekend in September</p>
+            <br>
+            <br>
+            <div class="links">
+                <a href="#sec2"><p class="words">Indoor Training</p><p class="arrows">&darr;</p></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sec2">
+        <div class="description">
+            <div class="links">
+                <a href="#sec1"><p class="arrows">&uarr;</p><p class="words">Outdoor Training</p></a>
+            </div>
+            <br>
+            <br>
+            <h1>INDOOR TRAINING - WINTER 2018</h1>
+            <br>
+                <p>Indoor training will begin on Saturday, January 20th, 2018.  Indoor training will continue until the weather improves and we can move outdoors.  The indoor training sessions are open to all members, new and potential players for the 2018 season.</p>
+                <p>For insurance and legal purposes, all participants MUST be insured by registering with the Club and BCMCL.  If you played last season, you are still covered until February 1, 2018.  Registration forms will be available for participants to sign at the indoor centre.  New players must sign registration form to participate.</p>
+                <p><em>Date: January 20 to mid-March</em></p>
+                <p><em>Time: 6 to 8 pm</em></p>
+                <p><em>Cost: Participants will pay $50 for the full indoor training prorgam (8 sessions)</em></p>
+                <p><em>Address: Surrey</em></p>
+                <p>The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The regular season is 19 weeks in duration with 18 matches - all limited overs games.  That means that each team will have one bye during the regular season.  The playoffs start on the first weekend in September</p>
+                <p>For more information, please contact Alex Turko #778-229-7858 or email:<a href="" style="color: blue;">alex@westvancouvercricketclub.ca</a> <span style="color: blue;"></span> </p>
+            <br>
+            <br>
+            <div class="links">
+                <a href="#sec3"><p class="words">Team</p><p class="arrows">&darr;</p></a>
+            </div>
+        </div>
+
+        <div class="description2">
+            <div class="links">
+                <a href="#sec1"><p class="arrows">&uarr;</p><p class="words">Outdoor Training</p></a>
+            </div>
+            <br>
+            <br>
+            <h1>INDOOR TRAINING - WINTER 2018</h1>
+            <br>
+                <p>Indoor training will begin on Saturday, January 20th, 2018.  Indoor training will continue until the weather improves and we can move outdoors.  The indoor training sessions are open to all members, new and potential players for the 2018 season.</p>
+                <p>For insurance and legal purposes, all participants MUST be insured by registering with the Club and BCMCL.  If you played last season, you are still covered until February 1, 2018.  Registration forms will be available for participants to sign at the indoor centre.  New players must sign registration form to participate.</p>
+                <p><em>Date: January 20 to mid-March</em></p>
+                <p><em>Time: 6 to 8 pm</em></p>
+                <p><em>Cost: Participants will pay $50 for the full indoor training prorgam (8 sessions)</em></p>
+                <p><em>Address: Surrey</em></p>
+                <p>The pre-season Twenty20 cricket will start on March 17 and the regular season begins in late April. The regular season is 19 weeks in duration with 18 matches - all limited overs games.  That means that each team will have one bye during the regular season.  The playoffs start on the first weekend in September</p>
+            <br>
+            <br>
+            <div class="links">
+                <a href="#sec3"><p class="words">Team</p><p class="arrows">&darr;</p></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sec3">
+        <div class="description">
+            <div class="links">
+                <a href="#sec2"><p class="arrows">&uarr;<p class="words">Indoor Training</p></a>
+            </div>
+            <br>
+            <br>
+            <h1>TEAMS REGISTERED FOR 2015 SEASON</h1>
+                <ul>
+                    <li>7 competitive men's teams registered with the BC Mainland Cricket League (BCMCL)</li>
+                    <li>1 women's cricket teams with the BCMCL</li>
+                    <li>1 (maybe 2 if we have the numbers) Under 16's hardball cricket teams with the Vancouver & District Saturday Morning Cricket League (VDSMCL)</li>
+                    <li>2 Under 12's Kanga (softball) cricket teams</li>
+                    <li>Over 40's West Vancouver Taverners</li>
+                </ul>
+
+                <h1>Player registration begins in January</h1>
+                <p>Junior player registration will be held 9 am on Saturday, April 25, 2015 at the West Vancouver Cricket Clubhouse - Hugo Ray Park.  Registration forms for the 2015 season will be placed on this page once they become available.</p>
+                <br>
+                <br>
+                <div  class="links">
+                    <a href="#sec4"><p class="words">Schedule</p><p class="arrows">&darr;</p></a>
+                </div> 
+        </div>
+        <div class="description2">
+            <div class="links">
+                <a href="#sec2"><p class="arrows">&uarr;<p class="words">Indoor Training</p></a>
+            </div>
+            <br>
+            <br>
+            <h1>TEAMS REGISTERED FOR 2015 SEASON</h1>
+                <ul>
+                    <li>7 competitive men's teams registered with the BC Mainland Cricket League (BCMCL)</li>
+                    <li>1 women's cricket teams with the BCMCL</li>
+                    <li>1 (maybe 2 if we have the numbers) Under 16's hardball cricket teams with the Vancouver & District Saturday Morning Cricket League (VDSMCL)</li>
+                    <li>2 Under 12's Kanga (softball) cricket teams</li>
+                    <li>Over 40's West Vancouver Taverners</li>
+                </ul>
+
+                <h1>Player registration begins in January</h1>
+                <p>Junior player registration will be held 9 am on Saturday, April 25, 2015 at the West Vancouver Cricket Clubhouse - Hugo Ray Park.  Registration forms for the 2015 season will be placed on this page once they become available.</p>
+                <br>
+                <br>
+                <div  class="links">
+                    <a href="#sec4"><p class="words">Schedule</p><p class="arrows">&darr;</p></a>
+                </div> 
+        </div>
+
+    </section>
+
+
+    <section id="sec4">
+        <div class="description">
+            <div class="links">
+                <a href="#sec3"><p class="arrows">&uarr;</p><p class="words">Team</p></a>
+            </div>
+            <br>
+            <br>
+            <div style="padding: 10px;"><h1>2019 SEASON - SCHEDULE</h1>
+                <p>The BC Mainland Cricket League (BCMCL) is responsible for the schedule and it will be published once the club receives it from the league.  The schedeule is usually available in early April.  The club plays every Saturday and Sunday at Hugo Ray Park and also travels to other grounds in Metro Vancouver, the Fraser Valley and the Okanagan.</p>
+                <h1>For the 2019 season the club has registered the following teams:</h1>
+                <ul>
+                    <li>1st XI - Premier Division</li>
+                    <li>2nd XI - Premier Division</li>
+                    <li>3rd XI - Division 1</li>
+                    <li>4th XI - Division 3</li>
+                    <li>5th XI - Division 4</li>
+                    <li>6th XI - Division 6</li>
+                    <li>7th XI - Division 7 (mostly junior players)</li>
+                    <li>Women's Team - play 4 to 6 games during the season</li>
+                    <li>Junior Under 16's  - the club is planning to have at least one team in the Vancouver & District Saturday Morning League</li>
+                    <li>Junior Under 12's Kanga Team  - 2 teams will play in the Vancouver & District Saturday Morning League</li>
+                    <li>School Cricket - Collingwood School</li>
+                    <li>Over 40's team (West Vancouver Taverners)</li>
+                </ul>
+
+                </div>
+        </div>
+
+        <div class="description2">
+            <div class="links">
+                <a href="#sec3"><p class="arrows">&uarr;</p><p class="words">Team</p></a>
+            </div>
+            <br>
+            <br>
+            <div style="padding: 10px;"><h1>2019 SEASON - SCHEDULE</h1>
+                <p>The BC Mainland Cricket League (BCMCL) is responsible for the schedule and it will be published once the club receives it from the league.  The schedeule is usually available in early April.  The club plays every Saturday and Sunday at Hugo Ray Park and also travels to other grounds in Metro Vancouver, the Fraser Valley and the Okanagan.</p>
+                <h1>For the 2019 season the club has registered the following teams:</h1>
+                <ul>
+                    <li>1st XI - Premier Division</li>
+                    <li>2nd XI - Premier Division</li>
+                    <li>3rd XI - Division 1</li>
+                    <li>4th XI - Division 3</li>
+                    <li>5th XI - Division 4</li>
+                    <li>6th XI - Division 6</li>
+                    <li>7th XI - Division 7 (mostly junior players)</li>
+                    <li>Women's Team - play 4 to 6 games during the season</li>
+                    <li>Junior Under 16's  - the club is planning to have at least one team in the Vancouver & District Saturday Morning League</li>
+                    <li>Junior Under 12's Kanga Team  - 2 teams will play in the Vancouver & District Saturday Morning League</li>
+                    <li>School Cricket - Collingwood School</li>
+                    <li>Over 40's team (West Vancouver Taverners)</li>
+                </ul>
+
+                </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bot">
+    
+        <h1>Related Links:</h1>
+        <ul>
+            <li><a href="junior.html">Junior Cricket</a></li>
+            <li><a href="women.html">Women's Cricket</a></li>
+        </ul>
+        
+        
+   
+    </div>
+    
+    
+
+    
+</body>
+</html>
