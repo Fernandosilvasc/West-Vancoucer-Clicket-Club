@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEST-VANCOUVER-CLICKET-CLUB</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css">
-    <!-- <link rel="stylesheet" href="/css/slide-image.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,900&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/menu-hamburguer.css">
+    <link rel="stylesheet" href="./scss/slider-image.css">
+    <link rel="stylesheet" href="/scss/index.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav_bar">
-                <div class="logo">
-                    <img src="images/new-logo-1.png" alt="" class="logo">
-                </div><!--## LOGO ##-->
-                <div class="menu-wrap">
-                    <input type="checkbox" class="toggler" />
-                    <div class="hamburger">
+    <nav>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="images/logo1.png" alt="" class="logo">
+            </div><!--## LOGO ##-->
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler" />
+                <div class="hamburger">
                     <div></div>
                 </div>
                 <div class="box-menu">
@@ -90,65 +90,52 @@
                     </div>
                 </div>
                 </div><!-- ## END MENU ## -->
-                </div><!-- ## MENU-WRAP ## -->
-            </div><!--## NAV BAR ## -->
-            <div id="slider">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <input type="radio" name="slider" id="slide4">
-                <div id="slides">
-                   <div id="overflow">
-                      <div class="inner">
-                         <div class="slide slide_1">
-                            <div class="slide-content">
-                                <h2>Welcome</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor at eius ipsam harum alias delectus tempora laudantium commodi, aliquid quaerat soluta enim ad, facere, aut quia. Ut, at atque!</p>
-                            </div>
-                            </div><!-- ## slide-1 ## -->
-                            <div class="slide slide_2">
-                            <div class="slide-content">
-                                <h2>Slide 2</h2>
-                                <p>Content for Slide 2</p>
-                            </div>
-                            </div><!-- ## slide-2 ## -->
-                            <div class="slide slide_3">
-                            <div class="slide-content">
-                                <h2>Slide 3</h2>
-                                <p>Content for Slide 3</p>
-                            </div>
-                            </div><!-- ## slide-3 ## -->
-                            <div class="slide slide_4">
-                            <div class="slide-content">
-                                <h2>Slide 4</h2>
-                                <p>Content for Slide 4</p>
-                            </div>
-                            </div><!-- ## slide-4 ## -->
-                      </div>
-                   </div>
+            </div><!-- ## MENU-WRAP ## -->
+        </div><!--## NAV BAR ## -->
+    </nav><!-- ## NAV ## -->
+    <div class="slider_image">
+        <div class="galleryContainer">
+            <div class="slideShowContainer">
+                <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                <div class="imageHolder">
+                    <img src="./images/Cricket-Home.jpg">
+                     <div class="text_description">
+                        <h1 class="img_title">WELCOME</h1>
+                        <p class="img_text_center">Meet our club, an experience you will never forget.</p>
+                    </div>
                 </div>
-                <div id="controls">
-                   <label for="slide1"></label>
-                   <label for="slide2"></label>
-                   <label for="slide3"></label>
-                   <label for="slide4"></label>
-                </div><!-- ## controls ## -->
-                <div id="bullets">
-                   <label for="slide1"></label>
-                   <label for="slide2"></label>
-                   <label for="slide3"></label>
-                   <label for="slide4"></label>
-                </div><!-- ## bullets ## -->
-            </div><!-- ## SLIDER IMAGE ##-->
-        </nav><!-- ## NAV ## -->
-    </header><!-- ## HEADER ##-->
+                <div class="imageHolder">
+                    <img src="./images/Cricket-Junior.jpg">
+                    <div class="text_description">
+                        <p class="img_text">A club where parents and children can play and have fun together.</p>
+                    </div>
+                </div>
+                <div class="imageHolder">
+                    <img src="./images/women.jpg">
+                    <div class="text_description">
+                        <p class="img_text">A club that women can meet and have special moments.</p>
+                    </div>
+                </div>
+                <div class="imageHolder">
+                    <img src="./images/cricket-club.jpg">
+                    <div class="text_description">
+                        <p class="img_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div id="dotsContainer"></div>
+            </div>
+        </div><!-- ## GALLERY CONTAINER ## -->
+    </div>
     <section class="about_container">
         <div class="grid_about">
             <div class="content_about">
                 <h1>About Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button>Read more</button>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button>Read more</button>
+                </div>
             </div>
             <div class="img_about">
                 <img src="images/Cricket Childrens.jpg" alt="" class="about_img">
@@ -160,22 +147,23 @@
         <h1>News & Events</h1>
         <hr>
             <div class="grid_news-events">
+                <h1 class="news-events-title">News & Events</h1>
                 <div class="news-events_cell"></div>
                 <div class="news-events_content item1">
-                    <img src="images/Cricket ball.jpg" alt="">
+                    <img src="images/Fernando-pic-11.jpg" alt="">
                 </div>
                 <div class="news-events_content item2">
-                    <img src="images/club1.jpg" alt="">
+                    <img src="./images/men-team.jpg" alt="">
                     <h5>27 February, 2020</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
                 </div>
                 <div class="news-events_content item3">
-                    <img src="images/Cricket Junior Tem.jpg" alt="">
+                    <img src="./images/wvcc-family.JPG" alt="">
                     <h5>15 March, 2020</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
                 </div>
                 <div class="news-events_content item4">
-                    <img src="images/women's team.jpg" alt="">
+                    <img src="./images/women-team.jpg" alt="">
                     <h5>19 April, 2020</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis</p>
                 </div>
@@ -204,7 +192,8 @@
     <footer>
         <div class="footer_container">
             <div class="box_info">
-                <h2>West Vancouver Cricket Club</h2>
+                <img class="box_info_logo" src="/images/logo1.png" alt="WVCC">
+                <h2 class="box_info_title">West Vancouver Cricket Club</h2>
                 <div class="info">
                     <img src="/images/address_icon.svg" alt="address">
                     <h3>Ray Park1290 Third StreetWest Vancouver, BCV7S 2Y2</h3>
@@ -217,10 +206,10 @@
                     <img src="/images/mail_icon.svg" alt="mail">
                     <h3>info@westvancouvercricketclub.ca</h3>
                 </div>
-            </div>
+            </div><!-- ## BOX INFO ## -->
             <div class="box_logo">
-                <img src="/images/new-logo-1.png" alt="WVCC">
-            </div>
+                <img src="/images/logo1.png" alt="WVCC">
+            </div><!-- ## BOX LOGO ## -->
             <div class="box_socialmedia">
                 <a href="#"><img src="/images/facebook_icon.svg" alt="facebook"></a>
                 <a href="#"><img src="/images/twitter_icon.svg" alt="twitter"></a>
@@ -228,6 +217,9 @@
                 <a href="#"><img src="/images/linkedin_icon.svg" alt="linkedin"></a>
             </div>
         </div>
+        <p class="copyright">copyright &copy; West Vancouver Cricket Club. All rights reserved.</p>
     </footer>
+    <script src="slider-img.js"></script>
+    <script src="navScrolled.js"></script>
 </body>
 </html>

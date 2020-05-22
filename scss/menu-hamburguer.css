@@ -3,6 +3,7 @@
 /* ########################### */
 .menu {
   width: auto;
+  margin: 0;
   padding-right: 50px;
 }
 
@@ -22,8 +23,8 @@
 
 .menu a {
   float: left;
-  padding: 12px 30px;
-  font-size: 18px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -42,7 +43,7 @@
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  top: 46px;
+  top: 55px;
   left: 0px;
   z-index: 1;
   background-color: #262626;
@@ -59,7 +60,7 @@
 
 .menu ul ul {
   top: 0;
-  left: 100px;
+  left: 120px;
   margin: 0 0 0 20px;
 }
 
@@ -130,9 +131,50 @@
 }
 
 /* ############################### */
-/* ####### HAMBURGUER MENU ####### */
+/* ####### RESPONSIVE PART ####### */
 /* ############################### */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1450px) {
+  .menu a {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  .menu ul {
+    top: 50px;
+  }
+  .menu ul ul {
+    left: 95px;
+  }
+  nav .nav_bar .menu-wrap .box-menu {
+    padding-right: 60px;
+  }
+  nav .nav_bar .logo img {
+    width: 45px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .menu a {
+    padding: 12px 20px;
+    font-size: 0.8rem;
+  }
+  .menu ul ul {
+    left: 80px;
+  }
+  nav .nav_bar .menu-wrap .box-menu {
+    padding-right: 20px;
+  }
+  nav .nav_bar .logo img {
+    width: 35px;
+    padding-left: 50px;
+  }
+}
+
+/* ## START -> MENU-HAMBURGUER ## */
+@media screen and (max-width: 780px) {
+  /* ############################### */
+  /* ####### HAMBURGUER MENU ####### */
+  /* ############################### */
   .toggler {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,8 +195,8 @@
     top: 0;
     right: 0;
     z-index: 3;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,6 +489,19 @@
   }
   .menu ul li:last-child > a {
     border-radius: 0 0 3px 3px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav .nav_bar .logo img {
+    width: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav .nav_bar .menu-wrap .hamburger {
+    width: 20px;
   }
 }
 /*# sourceMappingURL=menu-hamburguer.css.map */
