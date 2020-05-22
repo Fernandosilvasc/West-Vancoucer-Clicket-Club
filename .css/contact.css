@@ -52,6 +52,18 @@ input, select, textarea {
     padding: 10px 12px;
     font-size:1rem;
     }
+    
+.contact-error{
+    font-family: 'Roboto', sans-serif;
+    color: red;
+}
+
+.contact-success{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
 
 /* btn behaivor */
 
@@ -222,6 +234,13 @@ input, select, textarea {
     .btn-square-shadow{
         margin-top: 1rem;
         padding: 0;
+    }
+
+    .contact-success{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    
     }
 
     .contactform-container2{

@@ -69,7 +69,7 @@ $sql = "INSERT INTO users(title, email, content) VALUES ('$title', '$email', '$c
 if(mysqli_query($conn, $sql)){
     // successful
    
-   $success = 'Thank you for contacting';
+   $success = 'Thank you for your message!';
 }else{
     // error
     echo 'Query error' . mysqli_error($conn);
@@ -77,7 +77,13 @@ if(mysqli_query($conn, $sql)){
 }
 }
 // XSS(Cross Site Scripting)
+
+
+
 ?>
+
+
+
 
 
 
@@ -112,13 +118,13 @@ if(mysqli_query($conn, $sql)){
                             <form method="POST" action="contact.php" class="form-color">
                             
                                 <br><input type="text" name="title" size="15" maxlength="30" placeholder="Enter your Name" class="form-color">
-                                <?php echo $errors{'title'}; ?>
+                                <div class="contact-error"><?php echo $errors{'title'}; ?></div>
                                 <br>
                                 <br><input  type="email" name="email" placeholder="Enter a valid email address" class="form-color">
-                                <?php echo $errors{'email'}; ?>
+                                <div class="contact-error"><?php echo $errors{'email'}; ?></div>
                                 <br>
                                 <br><textarea  type="text"  name="content"  placeholder="Enter your message" cols="40" rows="8" class="form-color"></textarea> 
-                                <?php echo $errors{'content'}; ?>
+                                <div class="contact-error"><?php echo $errors{'content'}; ?></div> 
                             
                                 <br><input type="submit" name="submit" class="btn-contact" value="submit" class="form-color">  
                                
@@ -214,11 +220,11 @@ if(mysqli_query($conn, $sql)){
         </div>
 
         <div class="newsletter-container">
-            <form method="POST" action="newsletter.php" class="form-newsletter" >
-                <input class="mail" type="email" name="email" placeholder="Enter a valid email address" class="newsletter-form" style = width:300px;>
-                <span><?php echo $errors{'email'}; ?></span>
-                <input type="submit" class="btn-newsletter" style = width:100px; type="submit" name="submit" value="submit">   
+            <form method="POST" action="newsletter.php" class="form-newsletter"  >
+                <input  required="required"　class="mail" type="email" name="news" placeholder="Enter a valid email address" class="newsletter-form" style = width:300px;>
+                <input type="submit" class="btn-newsletter" style = width:100px; type="submit" name="submit" value="submit"> 
             </form>
+            <?php echo $errors{'news'}; ?>  
             <div class="contact-success"><?php echo $success2 ;?></div>
         </div>
 
