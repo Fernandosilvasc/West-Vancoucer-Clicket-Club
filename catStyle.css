@@ -1,0 +1,354 @@
+html{
+    font-family: 'Roboto';font-size: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+.h{
+    background-color: #FFCC00;
+    width: 100%;
+    height: 100px;
+    display:block;
+    
+}
+.logo{
+    height: 80px;
+}
+
+
+.menu{
+    font-size: 2rem;
+    margin: 0;
+    background-color: #FFCC00;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.menu a:hover{
+    background-color:gray; 
+    opacity: 0.6;
+}
+
+
+.submenu{
+    position: sticky;
+    position: -webkit-sticky;
+    margin: 0;
+    top: 0;
+    font-size: 2rem;
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+
+}
+
+
+
+
+.submenu a{
+    text-decoration: none;
+    color:white;
+}
+
+.submenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+
+.jsubmenu{
+    font-size: 2rem;
+    margin: 0 auto;
+    background-color:#666666;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+
+}
+.jsubmenu a{
+    text-decoration: none;
+    color: white;
+}
+
+.jsubmenu a:hover{
+    background-color: white;
+    opacity: 0.6;
+    color: red;
+}
+
+#sec00{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.description{
+    
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.description-c{
+    
+    color: black;
+    background-color: white;
+    padding: 10% 20%;
+}
+
+
+
+
+.imgContainer{
+    text-align: center;
+}
+
+.cricketImgs{
+    border: #FFCC00 solid 1px;
+    box-shadow: #FFCC00 5px 10px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+
+.schdl{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: black;
+    background-color: white;
+
+}
+
+
+
+.arrows{
+    margin: 0 auto;
+    font-size: 3rem;
+    display: block;
+    background-color: #666666;
+    opacity: 0.2;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.words{
+    color: #666666;
+    opacity: 0.8;
+}
+
+.links{
+    text-align: center;
+    color: #666666;
+}
+.links:hover .arrows{
+    background-color: #FFCC00;
+}
+.links:hover .words{
+    color:#FFCC00;
+}
+
+
+<!--iphoneX-->
+#sec0{
+    display: none;
+}
+.sec0-container{
+    display: none;
+}
+.iphonex-menu{
+    display: none;
+}
+.description2{
+    display: none;
+}
+.btn{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:375px){
+
+
+    html{
+        background-color: white;
+        box-sizing: border-box;
+       scroll-behavior: smooth;
+    }
+
+   
+    #sec0{
+        justify-items: center;
+        width: 375px;
+        height: 100vh;
+        margin: 0 auto;
+        display: block;
+    }
+    .sec0-container{
+
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+
+    }
+    
+
+    .submenu{
+        display: none !important ;
+    }
+
+    .top{  
+        display: none!important;
+    }
+
+    
+
+
+    #sec0 img{
+        height: 203px;
+        width: 375px;
+    }
+
+   
+
+    .centered{
+        color: white;
+        font-style: italic;
+        font-size: 3rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8;     
+     
+    }
+    
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    
+
+    .x-outdoor{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+        background-color: #666666;
+        
+    }
+    .x-indoor{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+        background-color: #FFCC00;
+    
+    }
+    .x-team{
+        position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+    }
+    .x-schedule{
+       position: relative;
+        height: 203px;
+        width: 100%;
+        color: white;
+       
+    }
+
+    
+    .h{
+       display: none !important;
+        
+    }
+
+    .description{
+        display: none !important;
+    }
+    .description2{
+        padding: 30px;
+        display:block;
+        background-color: white;
+    }
+    
+    .btn{
+        opacity: 0.5;
+        float: right;
+        background-color: #666666;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 50%;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        border-radius: 50%;
+        display: block;
+        text-align: center;
+    }
+
+
+    .sec0-container a:hover .centered{
+        color: #FFCC00;
+        
+    }
+
+    .more{
+        display: none;
+    }
+
+    button{
+                display: block;
+                width: 180px;
+                height: 60px;
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 10px;
+                background-color: #666666;
+                color: #fff;
+                border: 2px solid black;
+    }
+
+    button:hover {
+        background-color: #FFCC00;
+        cursor: pointer;
+        color: black;
+    }
+
+    .links{
+        display: none;
+    }
+    
+    
+
+
+
+
+}
+
+
