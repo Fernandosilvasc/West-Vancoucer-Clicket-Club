@@ -12,9 +12,7 @@ $errors = array('news'=> '');
 // global array variable
 // ehenever the submit button is pressed, condition check
 if(isset($_POST['submit'])){
-// echo htmlspecialchars($_POST['email']);
-// echo htmlspecialchars($_POST['title']);
-// echo htmlspecialchars($_POST['content']);
+
 
 // check email
 if(empty($_POST['news'])){
@@ -44,7 +42,7 @@ $sql = "INSERT INTO newsletter(news) VALUES ( '$news')";
 // save to db and check
 if(mysqli_query($conn, $sql)){
     // successful
-    $success2 = 'Thank you for subscription';
+    $success2 = 'Thank you for subscription!';
 }else{
     // error
     echo 'Query error' . mysqli_error($conn);
@@ -56,7 +54,7 @@ if(mysqli_query($conn, $sql)){
 
 
 
-<?php echo $errors{'news'}; ?>  
-<div class="contact-success"><?php echo $success2 ;?></div>
+<div class="contact-success" style="text-align:center; font-size:3rem;"><?php echo $errors{'news'}; ?></div> 
+<div class="contact-success" style="text-align:center; font-size:3rem;"><?php echo $success2 ;?></div>
 
 

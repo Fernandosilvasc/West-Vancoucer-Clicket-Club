@@ -94,11 +94,96 @@ if(mysqli_query($conn, $sql)){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=".css/contact.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="./scss/menu-hamburguer.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+<nav>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="images/logo1.png" alt="" class="logo">
+            </div><!--## LOGO ##-->
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler" />
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="box-menu">
+                <div>
+                    <div>
+                        <ul class="menu">
+                            <li><a href="#">HOME</a></li>
+                            <li><!-- ABOUT -->
+                                <a href="#">ABOUT</a>
+                                <ul>
+                                    <li><a href="#">ABOUT WVCC</a></li>
+                                    <li><a href="#">CLUB MANAGEMENT</a></li>
+                                    <li><a href="#">LIFE MEMBERS</a></li>
+                                    <li><a href="#">PROGRAMS</a></li>
+                                    <li><a href="#">FACILITIES</a></li>
+                                </ul>
+                            </li>
+                            <li><!-- CATEGORY -->
+                                <a href="#">CATEGORY</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">LEAGUE</a>
+                                        <ul>
+                                            <li><a href="#">TEAMS</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                            <li><a href="#">INDOOR TRAINING</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">JUNIOR</a>
+                                        <ul>
+                                            <li><a href="#">PROGRAMS</a></li>
+                                            <li><a href="#">SCHOOL CRICKET</a></li>
+                                            <li><a href="#">SUMMER CAMP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">WOMEN'S</a>
+                                        <ul>
+                                            <li><a href="#">TEAM</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">OVER 40'S</a>
+                                        <ul>
+                                            <li><a href="#">TEAM</a></li>
+                                            <li><a href="#">SCHEDULE</a></li>
+                                            <li><a href="#">TRAINING</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><!-- CLUBHOUSE -->
+                                <a href="#">CLUBHOUSE</a>
+                                <ul>
+                                    <li><a href="#">RENTAL</a></li>
+                                </ul>
+                            </li>
+                            <li><!-- CONTACT US -->
+                                <a href="#">CONTACT US</a>
+                                <ul>
+                                    <li><a href="#">LOCATION AND DIRECTIONS</a></li>
+                                    <li><a href="#">NEWSLETTER SIGNUP</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div><!-- ## END MENU ## -->
+            </div><!-- ## MENU-WRAP ## -->
+        </div><!--## NAV BAR ## -->
+    </nav><!-- ## NAV ## -->
     
 <section class="contact">
     
@@ -224,8 +309,8 @@ if(mysqli_query($conn, $sql)){
                 <input  required="required"　class="mail" type="email" name="news" placeholder="Enter a valid email address" class="newsletter-form" style = width:300px;>
                 <input type="submit" class="btn-newsletter" style = width:100px; type="submit" name="submit" value="submit"> 
             </form>
-            <?php echo $errors{'news'}; ?>  
-            <div class="contact-success"><?php echo $success2 ;?></div>
+            
+
         </div>
 
 
@@ -238,5 +323,37 @@ if(mysqli_query($conn, $sql)){
 
 
 </section>
+<footer>
+        <div class="footer_container">
+            <div class="box_info">
+                <img class="box_info_logo" src="/images/logo1.png" alt="WVCC">
+                <h2 class="box_info_title">West Vancouver Cricket Club</h2>
+                <div class="info">
+                    <img src="/images/address_icon.svg" alt="address">
+                    <h3>Ray Park1290 Third StreetWest Vancouver, BCV7S 2Y2</h3>
+                </div>
+                <div class="info">
+                    <img src="/images/phone_icon.svg" alt="phone">
+                    <h3>604-926-0820</h3>
+                </div>
+                <div class="info">
+                    <img src="/images/mail_icon.svg" alt="mail">
+                    <h3>info@westvancouvercricketclub.ca</h3>
+                </div>
+            </div><!-- ## BOX INFO ## -->
+            <div class="box_logo">
+                <img src="/images/logo1.png" alt="WVCC">
+            </div><!-- ## BOX LOGO ## -->
+            <div class="box_socialmedia">
+                <a href="#"><img src="/images/facebook_icon.svg" alt="facebook"></a>
+                <a href="#"><img src="/images/twitter_icon.svg" alt="twitter"></a>
+                <a href="#"><img src="/images/instagram_icon.svg" alt="instagram"></a>
+                <a href="#"><img src="/images/linkedin_icon.svg" alt="linkedin"></a>
+            </div>
+        </div>
+        <p class="copyright">copyright &copy; 2020 West Vancouver Cricket Club. All rights reserved.</p>
+    </footer>
+    <script src="slider-img.js"></script>
+    <script src="navScrolled.js"></script>
 </body>
 </html>
