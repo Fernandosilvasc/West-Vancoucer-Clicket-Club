@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5em;
+}
+:root {
+  --box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+}
+.parts {
+  width: 100%;
+  text-align: justify;
+  background-color: #f2f2f2;
+}
+#enter {
+  height: 85vh;
+  background: url(/images/enter.JPG) center center no-repeat ;
+
+  background-size: cover;
+}
+#enter h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color:#fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 5em;
+}
+.container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px 0px;
+}
+.container h1 {
+  text-align: center;
+  color:#fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+/****ABOUT US****/
+#about h1 {
+  padding: 10px;
+  font-size: 1.8em;
+}
+.container .aboutUs {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.aboutUs {
+  background: #ffcc00;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+}
+.aboutUs li{
+  color: #000;
+  list-style: circle;
+  margin-left: 50px;
+}
+
+.clubHistory {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.clubHistory h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color:#fff;
+  text-shadow: 1px 1px 10px #000;
+
+}
+.column2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.clubHistory .text {
+  width: 55%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.clubHistory .text p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.clubHistory .historyImage {
+  width: 40%;
+}
+.clubHistory .historyImage .leftImage {
+  float: right;
+}
+.clubHistory .historyImage img {
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+.readmore,
+.closed {
+  display: none;
+}
+/****CLUB MANAGEMENT****/
+#clubManagement {
+  background-color: #88898c;
+  height: auto;
+}
+
+#clubManagement h3 {
+  text-align: center;
+  color: #ffcc00;
+}
+#president {
+  margin: 25px auto;
+}
+.member {
+  width: 30%;
+  background-color: #7c7d80;
+  flex-wrap: wrap;
+
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.member:hover {
+  background-color: #dfe0e6;
+  box-shadow: var(--box-shadow);
+}
+.name {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.name i {
+  color: #000;
+  letter-spacing: 5px;
+}
+.name a {
+  color: #000;
+}
+.name a:hover {
+  color: #d9000d;
+}
+div.foto img {
+  /* vertical-align: middle;
+  -webkit-filter: grayscale(100%) contrast(0.9);
+  -moz-filter: grayscale(100%) contrast(0.9);
+  filter: grayscale(100%) contrast(0.9); */
+  width: 100%;
+  height: 300px;
+}
+div.foto {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+div.foto::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+}
+/* .flitre:after {
+  background: #f1e767;
+} */
+.memberContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+}
+/****LIFE MEMEBERS****/
+.infoLifeMembers {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+.lifeMembersContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.lifeMembersFoto {
+  width: 32%;
+  height: auto;
+  position: relative;
+}
+.lifeMembersFoto img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+/****PROGRAMS****/
+.paralax {
+  background: linear-gradient(rgba(0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/paralax.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.programsContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 100px;
+}
+.program {
+  width: 30%;
+  background: rgba(253, 253, 253, 0.9);
+  position: relative;
+  border-radius: 10px;
+}
+.programImage {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.programImage img {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+.programText {
+  width: 80%;
+  display: block;
+  position: relative;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+.programText h3{
+  text-align: center;
+}
+.programText a,
+.facilityText a {
+  display: block;
+  width: 100px;
+  position: relative;
+  top: 10px;
+  padding: 2px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #666666;
+  color: #fff;
+  border: 2px solid black;
+  margin: auto;
+}
+.programText a:hover,
+.facilityText a:hover {
+  background-color: #ffcc00;
+  cursor: pointer;
+  color: black;
+}
+/****FACILITY****/
+.facilityContainer {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
+.facilityContainer h1{
+  color: #ffcc00;
+
+}
+.facilityImage {
+  width: 60%;
+  position: relative;
+  z-index: 0;
+}
+.facilityImage img {
+  z-index: 0;
+  height: 550px;
+  width: 800px;
+  border-radius: 5px;
+}
+
+.facilityText {
+  text-align: justify;
+  width: 60%;
+  z-index: 1;
+  margin: auto;
+  background: rgba(253, 253, 253);
+  vertical-align: middle;
+  padding: 30px 25px;
+  border-radius: 5px;
+}
+.facilityText a {
+  position: relative;
+  width: 25%;
+}
+.show, #hiddenAbout{
+  display: none;
+}
+@media all and (max-width: 1260px) {
+  .column2 {
+    margin: 0;
+  }
+  .clubHistory .text {
+    height: 450px;
+  }
+  #lastText,
+  #rightText {
+    height: 350px;
+  }
+  .historyImage img {
+    margin: auto;
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+  }
+  .member {
+    width: 32.9%;
+    font-size: 12.5px;
+  }
+  div.foto {
+    width: 100%;
+  }
+  .programsContainer {
+    padding: 0 25px;
+    justify-content: space-between;
+  }
+  .program {
+    width: 32.5%;
+  }
+  .facilityImage img {
+    width: 600px;
+  }
+  .facilityText a{
+    width: 100px;
+  }
+}
+@media all and (max-width: 950px) {
+  .memberContainer {
+    flex-direction: column;
+  }
+  .member {
+    width: 70%;
+    margin: 10px auto;
+    font-size: 15px;
+  }
+  .clubHistory .text {
+    height: 500px;
+  }
+}
+@media all and (max-width: 890px) {
+  .text p {
+    margin-top: 10px;
+  }
+  .historyImage .leftImage {
+    height: 75%;
+  }
+  .historyImage .lastImage {
+    height: 55%;
+  }
+  .historyImage .firstImage {
+    height: 72%;
+  }
+
+  div.foto {
+    width: 70%;
+  }
+  .programsContainer {
+    flex-direction: column;
+  }
+  .program {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .facilityImage {
+    width: 100%;
+  }
+  .facilityText {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(253, 253, 253, 0.95);
+  }
+  .facilityImage img {
+    width: 100%;
+  }
+  .infoLifeMembers {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media all and (max-width: 695px) {
+  body {
+    font-size: 13.5px;
+  }
+  .text{
+    padding: 10px;
+  }
+  .scroll{
+    height: 250px;
+    overflow-y: scroll;
+  }
+  .hidden {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.1s ease;
+  }
+ 
+  .buton{
+    display: block;
+  }
+ 
+  .readmore {
+    padding: 2px;
+    margin: auto;
+    width: 100px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #666666;
+    color: #fff;
+    border: 2px solid black;
+  }
+  .buton:hover,
+  .showless:hover {
+    background-color: #ffcc00;
+    cursor: pointer;
+    color: black;
+  }
+  .readmore:checked ~ .hidden {
+    opacity: 1;
+    max-height: 100%;
+    font-size: inherit;
+  }
+  .readmore:checked ~ .buton {
+    display: none;
+  }
+  .readmore:checked ~ .showless {
+    display: block;
+  }
+  .closed:checked ~ .hidden {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+  }
+  .historyImage {
+    display: none;
+  }
+  .column2 {
+    margin: 0;
+  }
+  .column2 .text {
+    width: 100%;
+    height: 250px;
+  }
+  #lastText,
+  #rightText {
+    height: 150px;
+  }
+  .member {
+    width: 80%;
+  }
+
+  .facilityText {
+    width: 90%;
+  }
+  .facilityText a{
+    width: 100px;
+  }
+}
+@media all and (max-width: 555px) {
+  .aboutUs {
+    padding: 25px;
+  }
+  .column2 .text {
+    width: 100%;
+    height: 355px;
+  }
+  #lastText,
+  #rightText {
+    height: 205px;
+  }
+  .member{
+    width: 100%;
+  }
+}
+@media all and (max-width: 375px) {
+  div.foto {
+    width: 80%;
+  }
+  .clubHistory .text p {
+    margin-top: 45px;
+    position: absolute;
+  }
+  .column2 .text {
+    margin-bottom: 45px;
+  }
+  .readmore {
+    margin-top: 30px;
+  }
+  
+}
+@media all and (max-width: 345px) {
+  body,
+  .member {
+    font-size: 12.8px;
+  }
+}
